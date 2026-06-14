@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Life at The Enclave — Explore the waterfront, residential enclaves, green spaces, and community amenities at Gomoa Fetteh P.U.D.">
+  <title>Community — The Enclave Gomoa Fetteh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__pill">
+      <a href="index.html" class="nav__logo" aria-label="The Enclave Home">
+        <img src="images/logo.png" alt="Enclave" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="masterplan.html">Masterplan</a></li>
+        <li><a href="community.html" aria-current="page">Community</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--nav">Register Interest</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav__toggle-bars">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="nav__toggle-label">MENU</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="mobileNav" aria-hidden="true">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+    <nav aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="masterplan.html">Masterplan</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary btn--lg nav__mobile-cta">Register Interest</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         PAGE HERO
+         Replace: images/page-hero-community.jpg
+         Ideal: Lifestyle / community scene — beach, promenade, or residents
+    ============================================================ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__bg img-block" data-placeholder="page-hero-community.jpg" aria-hidden="true"></div>
+      <div class="page-hero__overlay" aria-hidden="true"></div>
+      <div class="page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="page-hero__breadcrumb-sep" aria-hidden="true">/</span>
+          <span>Community</span>
+        </div>
+        <div class="page-hero__label" data-anim="fade-up" data-delay="0">Live · Work · Play</div>
+        <h1 class="page-hero__title" id="page-title" data-anim="fade-up" data-delay="150">
+          Life at<br><em>The Enclave</em>
+        </h1>
+        <p class="page-hero__sub" data-anim="fade-up" data-delay="300">
+          Three distinct worlds — the waterfront, the residential enclave, and the natural landscape — woven together into one walkable coastal community.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         THREE DISTRICTS — Expanded image card grid
+         Replace:
+           images/highlights-waterfront.jpg
+           images/highlights-residential.jpg
+           images/highlights-greenspace.jpg
+    ============================================================ -->
+    <section class="highlights" aria-labelledby="districts-heading">
+      <div class="container">
+        <div class="highlights__header" data-anim="fade-up" data-delay="0">
+          <h2 class="section-heading" id="districts-heading">Three Worlds,<br>One Community</h2>
+        </div>
+
+        <div class="highlights__grid">
+          <article class="highlights__card highlights__card--tall" data-anim="fade-up" data-delay="0">
+            <div class="highlights__card-bg img-block" data-placeholder="highlights-waterfront.jpg" aria-hidden="true"></div>
+            <div class="highlights__card-content">
+              <h3>The Waterfront</h3>
+              <p>Atlantic beachfront promenade, marina access, waterfront dining and retail, and public recreation spaces where community life meets the ocean.</p>
+              <a href="#waterfront-detail" class="highlights__card-link">Learn more &#8599;</a>
+            </div>
+          </article>
+          <article class="highlights__card" data-anim="fade-up" data-delay="150">
+            <div class="highlights__card-bg img-block" data-placeholder="highlights-residential.jpg" aria-hidden="true"></div>
+            <div class="highlights__card-content">
+              <h3>Residential Enclaves</h3>
+              <p>Private, gated sub-communities with modern coastal architecture, landscaped streets, and uninterrupted sea breezes.</p>
+              <a href="#residential-detail" class="highlights__card-link">Learn more &#8599;</a>
+            </div>
+          </article>
+          <article class="highlights__card" data-anim="fade-up" data-delay="300">
+            <div class="highlights__card-bg img-block" data-placeholder="highlights-greenspace.jpg" aria-hidden="true"></div>
+            <div class="highlights__card-content">
+              <h3>Green &amp; Open Spaces</h3>
+              <p>Dawa Lagoon preservation zone, community parks, shaded walkways, and jogging paths weave nature through every district.</p>
+              <a href="#green-detail" class="highlights__card-link">Learn more &#8599;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WATERFRONT DETAIL — Text + Image
+         Replace: images/community-waterfront-detail.jpg
+    ============================================================ -->
+    <section class="content-section" id="waterfront-detail" aria-labelledby="wf-heading">
+      <div class="container">
+        <div class="split" data-anim="fade-up" data-delay="0">
+          <div class="split__content">
+            <h2 class="section-heading" id="wf-heading">Where the Community<br>Meets the Ocean</h2>
+            <p class="split__body">
+              The waterfront district is the social heart of The Enclave. A continuous public promenade runs along the Atlantic beachfront, lined with shade structures, seating, and access points down to the sand.
+            </p>
+            <p class="split__body">
+              Marina facilities serve small craft and leisure boats, while a curated waterfront retail and dining strip provides residents and visitors with everyday conveniences alongside memorable experiences.
+            </p>
+            <ul class="feature-split__list" role="list">
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div><strong>Atlantic Beach Promenade</strong><p>A continuous public walkway along the coast, accessible to all residents.</p></div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div><strong>Marina &amp; Boat Access</strong><p>Dedicated facilities for leisure watercraft and coastal recreation.</p></div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div><strong>Waterfront Retail &amp; Dining</strong><p>Curated food, beverage, and lifestyle outlets within a pedestrian-friendly strip.</p></div>
+              </li>
+            </ul>
+          </div>
+          <div class="split__image-wrap">
+            <!-- Replace: images/community-waterfront-detail.jpg -->
+            <div class="split__image img-block" data-placeholder="community-waterfront-detail.jpg"
+              style="background-image: url('images/Images/Faaborg Harbour Bath.jpg'); background-color:#060606; background-position:center 50%;"
+              aria-label="Waterfront district view"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WALKABILITY SECTION — Image + Text
+         Replace: images/community-walkability.jpg
+    ============================================================ -->
+    <section class="content-section content-section--sand" id="residential-detail" aria-labelledby="walk-heading">
+      <div class="container">
+        <div class="split split--flip" data-anim="fade-up" data-delay="0">
+          <div class="split__image-wrap">
+            <!-- Replace: images/community-walkability.jpg -->
+            <div class="split__image img-block" data-placeholder="community-walkability.jpg"
+              style="background-image: url('images/Images/enclave-bike-walk-path.png'); background-color:#060606; background-position:center 60%;"
+              aria-label="Bicycle lanes and walking paths through The Enclave"></div>
+          </div>
+          <div class="split__content">
+            <h2 class="section-heading" id="walk-heading">Private Living,<br>Connected Community</h2>
+            <p class="split__body">
+              Each residential enclave within The Enclave is designed as a self-contained neighbourhood — with controlled access, landscaped streets, play areas, and communal garden space — while remaining connected to the wider community via an extensive pedestrian network.
+            </p>
+            <ul class="feature-split__list" role="list">
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div><strong>Gated Access &amp; Security</strong><p>Manned entry points and perimeter systems for residential privacy.</p></div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div><strong>Clean Modern Architecture</strong><p>Simple, bold contemporary design with coastal-sensitive materials and clean lines.</p></div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div><strong>Structured Parking &amp; Circulation</strong><p>Dedicated parking zones that free the street-level for pedestrians and greenery.</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AMENITIES GRID — 6 tiles
+    ============================================================ -->
+    <section class="content-section" id="green-detail" aria-labelledby="amenities-heading">
+      <div class="container">
+        <div class="intro__header" data-anim="fade-up" data-delay="0" style="text-align:center; margin-bottom: var(--sp-xl);">
+          <h2 class="section-heading" id="amenities-heading">Community Amenities</h2>
+          <p class="section-sub" style="margin: 0 auto; text-align: center;">A full range of lifestyle amenities integrated into the masterplan for everyday living and long-term community wellbeing.</p>
+        </div>
+
+        <div class="amenities-grid" data-anim="fade-up" data-delay="0">
+
+          <div class="amenity-tile">
+            <span class="amenity-tile__icon" aria-hidden="true">&#127958;</span>
+            <h4>Beach Access</h4>
+            <p>Direct Atlantic beachfront access for all residents via designated pathways and public promenade.</p>
+          </div>
+
+          <div class="amenity-tile">
+            <span class="amenity-tile__icon" aria-hidden="true">&#127807;</span>
+            <h4>Lagoon Preservation</h4>
+            <p>The Dawa Lagoon corridor is protected, landscaped, and accessible as a natural community asset.</p>
+          </div>
+
+          <div class="amenity-tile">
+            <span class="amenity-tile__icon" aria-hidden="true">&#127939;</span>
+            <h4>Jogging &amp; Walking Paths</h4>
+            <p>Shaded, well-lit jogging and walking routes connecting all districts throughout the 267-acre site.</p>
+          </div>
+
+          <div class="amenity-tile">
+            <span class="amenity-tile__icon" aria-hidden="true">&#127927;</span>
+            <h4>Play Areas</h4>
+            <p>Dedicated children's play spaces within residential neighbourhoods and shared community parks.</p>
+          </div>
+
+          <div class="amenity-tile">
+            <span class="amenity-tile__icon" aria-hidden="true">&#127970;</span>
+            <h4>Retail &amp; Dining</h4>
+            <p>Waterfront and neighbourhood-level retail, food and beverage, and everyday convenience services.</p>
+          </div>
+
+          <div class="amenity-tile">
+            <span class="amenity-tile__icon" aria-hidden="true">&#127966;</span>
+            <h4>Communal Green Spaces</h4>
+            <p>Landscaped parks and communal gardens throughout the community for gathering, relaxation, and events.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DESIGN PHILOSOPHY — Text + Image
+         Replace: images/community-design.jpg
+    ============================================================ -->
+    <section class="content-section content-section--sand" aria-labelledby="design-heading">
+      <div class="container">
+        <div class="split" data-anim="fade-up" data-delay="0">
+          <div class="split__content">
+            <h2 class="section-heading" id="design-heading">Simple, Modern,<br>Coastal.</h2>
+            <p class="split__body">
+              The architectural direction for The Enclave draws on the principles of simplicity, sensitivity to the coastal environment, and contemporary relevance. Facades are clean and bold. Materials are durable and low-maintenance. Colours are drawn from the natural palette of sand, sea, and sky.
+            </p>
+            <p class="split__body">
+              Public spaces are generously landscaped with shade trees, ground cover, and coastal-hardy planting that thrives in the Gomoa Fetteh climate. Every street, path, and open space is designed to feel inviting — not merely functional.
+            </p>
+            <a href="contact.html" class="btn btn--primary">
+              Register Your Interest <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+            </a>
+          </div>
+          <div class="split__image-wrap">
+            <!-- Replace: images/community-design.jpg -->
+            <div class="split__image img-block" data-placeholder="community-design.jpg"
+              style="background-image: url('images/Images/Burasiri Khon Kaen Landscape Design by Shma.jpg'); background-color:#1A1008; background-position:center center;"
+              aria-label="Community architecture and design"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="cta-banner__inner" data-anim="fade-up" data-delay="0">
+        <div class="cta-banner__tag">Be Part of The Enclave</div>
+        <h2 id="cta-heading">Join the Community</h2>
+        <p>Register your interest to receive residency information, land availability updates, and invitations to exclusive site visits.</p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn--primary btn--lg">
+            Register Interest <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+          </a>
+          <a href="investment.html" class="btn btn--ghost btn--lg">View Investment Vision</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (same as all pages) -->
+  <footer class="footer" aria-labelledby="footer-heading">
+    <div class="footer__bg img-block" data-placeholder="footer-coastal-dusk.jpg" aria-hidden="true"></div>
+    <div class="footer__overlay" aria-hidden="true"></div>
+    <div class="footer__content">
+      <div class="footer__newsletter">
+        <div class="footer__newsletter-text">
+          <h2 id="footer-heading">Stay Updated on<br>The Enclave.</h2>
+          <p>Register your interest and receive the latest updates, investment briefs, and masterplan releases.</p>
+        </div>
+        <div class="footer__newsletter-form">
+          <form class="footer__form" id="newsletterForm" novalidate>
+            <div class="footer__form-fields">
+              <input type="text" name="name" placeholder="Your full name" required aria-label="Full name">
+              <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Register Interest <span class="btn__arrow" aria-hidden="true">&#8594;</span></button>
+            <label class="footer__form-check">
+              <input type="checkbox" required>
+              <span>I agree to receive project updates from The Enclave.</span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="footer__divider" aria-hidden="true"></div>
+      <div class="footer__columns">
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Enclave" class="footer__logo-img">
+          <p>A planned beachfront community in Gomoa Fetteh, Central Region, Ghana.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+          </div>
+        </div>
+        <div class="footer__col"><h3>Masterplan</h3><ul role="list"><li><a href="masterplan.html">Overview</a></li><li><a href="masterplan.html">Land Use Plan</a></li><li><a href="masterplan.html">Infrastructure</a></li><li><a href="masterplan.html">Phasing Plan</a></li></ul></div>
+        <div class="footer__col"><h3>Community</h3><ul role="list"><li><a href="community.html">The Waterfront</a></li><li><a href="community.html">Residential Zones</a></li><li><a href="community.html">Green Spaces</a></li><li><a href="community.html">Amenities</a></li></ul></div>
+        <div class="footer__col"><h3>Investment</h3><ul role="list"><li><a href="investment.html">Investment Brief</a></li><li><a href="investment.html">Why Gomoa Fetteh</a></li><li><a href="investment.html">Phased Returns</a></li><li><a href="investment.html">FAQ</a></li></ul></div>
+        <div class="footer__col"><h3>Contact</h3><ul role="list"><li><a href="contact.html">Get in Touch</a></li><li><a href="contact.html">Request Site Visit</a></li><li><a href="contact.html">Press &amp; Media</a></li><li>Gomoa Fetteh, Ghana</li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 The Enclave, Gomoa Fetteh P.U.D. All rights reserved.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

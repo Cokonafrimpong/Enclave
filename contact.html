@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Enclave — Gomoa Fetteh P.U.D. Register your interest, request a site visit, or speak with our development team.">
+  <title>Contact — The Enclave Gomoa Fetteh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__pill">
+      <a href="index.html" class="nav__logo" aria-label="The Enclave Home">
+        <img src="images/logo.png" alt="Enclave" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="masterplan.html">Masterplan</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--nav">Register Interest</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav__toggle-bars">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="nav__toggle-label">MENU</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="mobileNav" aria-hidden="true">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+    <nav aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="masterplan.html">Masterplan</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary btn--lg nav__mobile-cta">Register Interest</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         PAGE HERO
+         Replace: images/page-hero-contact.jpg
+         Ideal: Peaceful coastal shot — beach, lagoon edge, or sunrise
+    ============================================================ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__bg img-block" data-placeholder="page-hero-contact.jpg" aria-hidden="true"></div>
+      <div class="page-hero__overlay" aria-hidden="true"></div>
+      <div class="page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="page-hero__breadcrumb-sep" aria-hidden="true">/</span>
+          <span>Contact</span>
+        </div>
+        <div class="page-hero__label" data-anim="fade-up" data-delay="0">Let's Connect</div>
+        <h1 class="page-hero__title" id="page-title" data-anim="fade-up" data-delay="150">
+          Get in<br><em>Touch</em>
+        </h1>
+        <p class="page-hero__sub" data-anim="fade-up" data-delay="300">
+          Whether you're a prospective resident, investor, development partner, or press, our team is ready to connect and answer your questions about The Enclave.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SPLIT — Form + Info Cards
+    ============================================================ -->
+    <section class="content-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-split" data-anim="fade-up" data-delay="0">
+
+          <!-- Contact Form -->
+          <div>
+            <h2 class="section-heading" id="contact-heading" style="margin-bottom:var(--sp-md);">
+              We'd Love<br>to Hear From You
+            </h2>
+            <p style="font-size:16px; color:var(--c-grey); line-height:1.7; margin-bottom:var(--sp-xl);">
+              Fill in the form below and a member of our team will get back to you within one business day.
+            </p>
+            <div class="form-block">
+              <form id="contactForm" novalidate>
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="c-fname">First Name</label>
+                    <input type="text" id="c-fname" name="fname" placeholder="First name" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="c-lname">Last Name</label>
+                    <input type="text" id="c-lname" name="lname" placeholder="Last name" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="c-email">Email Address</label>
+                    <input type="email" id="c-email" name="email" placeholder="Your email" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="c-phone">Phone Number</label>
+                    <input type="tel" id="c-phone" name="phone" placeholder="+233 ...">
+                  </div>
+                </div>
+                <div class="form-grid form-grid--full" style="margin-bottom:14px;">
+                  <div class="form-field">
+                    <label for="c-enquiry">Nature of Enquiry</label>
+                    <select id="c-enquiry" name="enquiry">
+                      <option value="" disabled selected>Select an option</option>
+                      <option>Residential Interest</option>
+                      <option>Investment Enquiry</option>
+                      <option>Development Partnership</option>
+                      <option>Site Visit Request</option>
+                      <option>Press &amp; Media</option>
+                      <option>General Question</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-grid form-grid--full" style="margin-bottom:14px;">
+                  <div class="form-field">
+                    <label for="c-message">Your Message</label>
+                    <textarea id="c-message" name="message" placeholder="Tell us what you'd like to know..."></textarea>
+                  </div>
+                </div>
+                <div class="form-submit">
+                  <button type="submit" class="btn btn--primary btn--full" id="contactSubmit">
+                    Send Message <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Info cards -->
+          <div>
+            <h2 class="section-heading" style="margin-bottom:var(--sp-xl);">
+              How to<br>Reach Us
+            </h2>
+
+            <div class="contact-info-cards" style="margin-bottom:var(--sp-md);">
+
+              <div class="contact-info-card">
+                <div class="contact-info-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Location</h4>
+                  <p>Gomoa Fetteh, Central Region<br>Republic of Ghana<br>75 minutes from Accra CBD</p>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:info@theenclave.gh" style="color:var(--c-teal); transition:opacity 0.2s ease;">info@theenclave.gh</a><br>
+                    <a href="mailto:invest@theenclave.gh" style="color:var(--c-teal); transition:opacity 0.2s ease;">invest@theenclave.gh</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.5 2 2 0 0 1 3.55 1.31h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.88a16 16 0 0 0 6.07 6.07l.88-.88a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>Available on request through the investment brief process. Site visit arrangements handled by our team directly.</p>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Response Time</h4>
+                  <p>We aim to respond to all enquiries within one business day, Monday to Friday.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Site Visit Card -->
+            <div class="site-visit-card">
+              <h3>&#128064; Request a Site Visit</h3>
+              <p>Experience the Gomoa Fetteh coastline and the 267-acre masterplan site in person. We run regular investor and prospective resident site visits with full briefings.</p>
+              <a href="#contactForm" class="btn btn--ghost" style="border-color:rgba(255,255,255,0.4);" onclick="document.getElementById('c-enquiry').value='Site Visit Request';">
+                Book a Site Visit <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         QUICK LINKS / NEXT STEPS
+    ============================================================ -->
+    <section class="content-section content-section--sand" aria-labelledby="links-heading">
+      <div class="container">
+        <div class="intro__header" data-anim="fade-up" data-delay="0" style="text-align:center; margin-bottom:var(--sp-xl);">
+          <h2 class="section-heading" id="links-heading">Before You Go</h2>
+        </div>
+
+        <div class="feature-cards" data-anim="fade-up" data-delay="0">
+
+          <div class="feature-card" style="text-align:center;">
+            <div class="feature-card__icon" style="margin:0 auto var(--sp-md);" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="9" y1="21" x2="9" y2="9"/>
+              </svg>
+            </div>
+            <h3>The Masterplan</h3>
+            <p>Explore the 267-acre land-use plan, infrastructure strategy, and development phasing in detail.</p>
+            <a href="masterplan.html" class="highlights__card-link" style="display:inline-flex; margin-top:var(--sp-md);">View Masterplan &#8599;</a>
+          </div>
+
+          <div class="feature-card" style="text-align:center;">
+            <div class="feature-card__icon" style="margin:0 auto var(--sp-md);" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>The Community</h3>
+            <p>Discover what daily life looks like across the waterfront, residential enclaves, and green spaces.</p>
+            <a href="experience.html" class="highlights__card-link" style="display:inline-flex; margin-top:var(--sp-md);">Explore Experience &#8599;</a>
+          </div>
+
+          <div class="feature-card" style="text-align:center;">
+            <div class="feature-card__icon" style="margin:0 auto var(--sp-md);" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                <polyline points="16 7 22 7 22 13"/>
+              </svg>
+            </div>
+            <h3>The Investment Vision</h3>
+            <p>Review the investment opportunity, why Gomoa Fetteh, phased returns, and the investment brief.</p>
+            <a href="investment.html" class="highlights__card-link" style="display:inline-flex; margin-top:var(--sp-md);">View Investment &#8599;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-labelledby="footer-heading">
+    <div class="footer__bg img-block" data-placeholder="footer-coastal-dusk.jpg" aria-hidden="true"></div>
+    <div class="footer__overlay" aria-hidden="true"></div>
+    <div class="footer__content">
+      <div class="footer__newsletter">
+        <div class="footer__newsletter-text">
+          <h2 id="footer-heading">Stay Updated on<br>The Enclave.</h2>
+          <p>Register your interest and receive the latest updates, investment briefs, and masterplan releases.</p>
+        </div>
+        <div class="footer__newsletter-form">
+          <form class="footer__form" id="newsletterForm" novalidate>
+            <div class="footer__form-fields">
+              <input type="text" name="name" placeholder="Your full name" required aria-label="Full name">
+              <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Register Interest <span class="btn__arrow" aria-hidden="true">&#8594;</span></button>
+            <label class="footer__form-check">
+              <input type="checkbox" required>
+              <span>I agree to receive project updates from The Enclave.</span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="footer__divider" aria-hidden="true"></div>
+      <div class="footer__columns">
+        <div class="footer__brand"><img src="images/logo.png" alt="Enclave" class="footer__logo-img"><p>A planned beachfront community in Gomoa Fetteh, Central Region, Ghana.</p><div class="footer__social"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">X</a><a href="#" aria-label="Instagram">Ig</a></div></div>
+        <div class="footer__col"><h3>Masterplan</h3><ul role="list"><li><a href="masterplan.html">Overview</a></li><li><a href="masterplan.html">Land Use Plan</a></li><li><a href="masterplan.html">Infrastructure</a></li><li><a href="masterplan.html">Phasing Plan</a></li></ul></div>
+        <div class="footer__col"><h3>Experience</h3><ul role="list"><li><a href="experience.html">The Waterfront</a></li><li><a href="experience.html">Residential Zones</a></li><li><a href="experience.html">Green Spaces</a></li><li><a href="experience.html">Amenities</a></li></ul></div>
+        <div class="footer__col"><h3>Investment</h3><ul role="list"><li><a href="investment.html">Investment Brief</a></li><li><a href="investment.html">Why Gomoa Fetteh</a></li><li><a href="investment.html">Phased Returns</a></li><li><a href="investment.html">FAQ</a></li></ul></div>
+        <div class="footer__col"><h3>Contact</h3><ul role="list"><li><a href="contact.html">Get in Touch</a></li><li><a href="contact.html">Request Site Visit</a></li><li><a href="contact.html">Press &amp; Media</a></li><li>Gomoa Fetteh, Ghana</li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 The Enclave, Gomoa Fetteh P.U.D. All rights reserved.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Enclave — A 267-acre planned beachfront community in Gomoa Fetteh, Central Region, Ghana. Live, work, and play along Ghana's Atlantic coast.">
+  <title>The Enclave — Gomoa Fetteh P.U.D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION — Pill style, glassmorphism, fixed
+  ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__pill">
+      <a href="index.html" class="nav__logo" aria-label="The Enclave Home">
+        <img src="images/logo.png" alt="Enclave" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="masterplan.html">Masterplan</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--nav">Register Interest</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav__toggle-bars">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="nav__toggle-label">MENU</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav__mobile" id="mobileNav" aria-hidden="true">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+    <nav aria-label="Mobile navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="masterplan.html">Masterplan</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary btn--lg nav__mobile-cta">Register Interest</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1 · HERO — framed image
+    ============================================================ -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero__frame">
+        <div class="hero__bg" aria-hidden="true"></div>
+      </div>
+      <div class="hero__text">
+        <h1 class="hero__headline" id="hero-heading">
+          Ghana's First<br><em>Coastal Community</em>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Hero statement — text below the image -->
+    <section class="hero-statement" aria-labelledby="hero-statement-heading">
+      <div class="container">
+        <p class="hero-statement__text" id="hero-statement-heading" data-anim="fade-up" data-delay="0">
+          Take a departure and discover an entirely new beachfront lifestyle outside Accra. The Enclave defines Ghana's first master-planned coastal community — a mixed-use live + work + play development set across 267 acres along the Atlantic Ocean and Dawa Lagoon.
+        </p>
+        <div class="hero-statement__actions" data-anim="fade-up" data-delay="150">
+          <a href="masterplan.html" class="btn btn--primary btn--lg">
+            Explore Masterplan <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+          </a>
+          <a href="investment.html" class="btn btn--ghost-dark btn--lg">
+            View Investment Vision
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 · INTRO CARDS
+    ============================================================ -->
+    <section class="intro" id="masterplan" aria-labelledby="intro-heading">
+      <div class="container">
+
+        <div class="intro__header" data-anim="fade-up" data-delay="0">
+          <h2 class="section-heading" id="intro-heading">
+            Our Vision
+          </h2>
+          <p class="section-sub">
+            To create a world-class coastal destination that establishes a benchmark for design, sustainability, functionality, and urban living — a place where people desire to live, work, recreate, and relax.
+          </p>
+        </div>
+
+        <div class="intro__cards">
+
+          <div class="intro__card" data-anim="fade-up" data-delay="0">
+            <div class="intro__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12c1.5-2 3-3 4-3s2.5 3 4 3 2.5-3 4-3 2.5 3 4 3"/>
+                <path d="M2 17c1.5-2 3-3 4-3s2.5 3 4 3 2.5-3 4-3 2.5 3 4 3"/>
+              </svg>
+            </div>
+            <h3>Smart Waterfront Living</h3>
+            <p>A connected waterfront environment that integrates residential, hospitality, recreation, and commercial experiences.</p>
+          </div>
+
+          <div class="intro__card" data-anim="fade-up" data-delay="150">
+            <div class="intro__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+              </svg>
+            </div>
+            <h3>Sustainable Growth</h3>
+            <p>Development principles that prioritize environmental stewardship, green infrastructure, and responsible use of natural resources.</p>
+          </div>
+
+          <div class="intro__card" data-anim="fade-up" data-delay="300">
+            <div class="intro__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 8C8 10 5.9 16.17 3.82 19.5c1.18.5 3.18.5 4.5-.33.84 1.66 3.02 2.83 6.18 2.83 4 0 7-3 7-7 0-6-5-7-5-7z"/>
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" style="display:none"/>
+              </svg>
+            </div>
+            <h3>Walkable Neighbourhoods</h3>
+            <p>Designed to encourage walking, cycling, recreation, and vibrant public interaction throughout every district.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 · FEATURE SPLIT
+         Replace: images/feature-masterplan-view.jpg
+         Ideal: Rendered masterplan bird's-eye or architectural visual
+    ============================================================ -->
+    <section class="feature-split" id="community" aria-labelledby="feature-heading">
+      <div class="container">
+        <div class="feature-split__inner">
+
+          <div class="feature-split__content" data-anim="fade-up" data-delay="0">
+            <h2 class="section-heading" id="feature-heading">
+              Designed For The Way<br>People Want To Live.
+            </h2>
+            <p class="feature-split__intro">
+              The Enclave is envisioned as a cohesive planned community where architecture, landscape, infrastructure, and public spaces work together to create an exceptional living environment. The development combines modern coastal living with carefully preserved natural assets, including the Dawa Lagoon, wetlands, beaches, and green spaces.
+            </p>
+
+            <ul class="feature-split__list" role="list">
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div>
+                  <strong>Smart Working Waterfront</strong>
+                  <p>An activated waterfront environment that supports leisure, hospitality, business, and lifestyle experiences.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div>
+                  <strong>Connected Infrastructure</strong>
+                  <p>Utilities, transportation systems, and services planned from the outset to support long-term growth.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div>
+                  <strong>Green Spaces &amp; Open Areas</strong>
+                  <p>Extensive landscaping, parks, recreational areas, and ecological preservation zones integrated throughout the development.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div>
+                  <strong>Pedestrian &amp; Bicycle Friendly</strong>
+                  <p>A hierarchy of walkways, jogging trails, bicycle routes, and public spaces designed around people rather than vehicles.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-split__check" aria-hidden="true">&#10003;</span>
+                <div>
+                  <strong>Waterfront Recreation</strong>
+                  <p>Access to beaches, lagoons, waterfront promenades, and public gathering spaces.</p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="feature-split__visual" data-anim="fade-up" data-delay="200">
+            <div class="feature-split__image-wrap">
+              <!-- Replace: images/feature-masterplan-view.jpg -->
+              <div class="feature-split__image img-block" data-placeholder="feature-masterplan-view.jpg" aria-label="Masterplan aerial view of The Enclave community"></div>
+              <div class="feature-split__badge glass-card">
+                <span class="badge__icon" aria-hidden="true">&#127754;</span>
+                <div>
+                  <strong>Dawa Lagoon</strong>
+                  <span>Preserved natural waterway</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 · COMMUNITY HIGHLIGHTS (3 image cards)
+         Replace:
+           images/highlights-waterfront.jpg   — beach promenade / marina
+           images/highlights-residential.jpg  — residential architecture render
+           images/highlights-greenspace.jpg   — lagoon / park / green corridor
+    ============================================================ -->
+    <section class="highlights" id="highlights" aria-labelledby="highlights-heading">
+      <div class="container">
+        <div class="highlights__header" data-anim="fade-up" data-delay="0">
+          <h2 class="section-heading" id="highlights-heading">
+            Master Planned For<br>Modern Coastal Living
+          </h2>
+        </div>
+
+        <div class="highlights__grid">
+
+          <!-- Card 1 — Tall left card -->
+          <article class="highlights__card highlights__card--tall" data-anim="fade-up" data-delay="0">
+            <div class="highlights__card-bg img-block" data-placeholder="highlights-waterfront.jpg" aria-hidden="true"></div>
+            <div class="highlights__card-content">
+              <h3>The Waterfront</h3>
+              <p>A vibrant public promenade where marina life, beach access, dining, and leisure converge along the Atlantic coast.</p>
+              <a href="experience.html#water-heading" class="highlights__card-link">Explore &#8599;</a>
+            </div>
+          </article>
+
+          <!-- Card 2 — Top right -->
+          <article class="highlights__card" data-anim="fade-up" data-delay="150">
+            <div class="highlights__card-bg img-block" data-placeholder="highlights-residential.jpg" aria-hidden="true"></div>
+            <div class="highlights__card-content">
+              <h3>Residential Enclaves</h3>
+              <p>Private gated communities with modern architecture, landscaped streets, and coastal breezes year-round.</p>
+              <a href="masterplan.html" class="highlights__card-link">Explore &#8599;</a>
+            </div>
+          </article>
+
+          <!-- Card 3 — Bottom right -->
+          <article class="highlights__card" data-anim="fade-up" data-delay="300">
+            <div class="highlights__card-bg img-block" data-placeholder="highlights-greenspace.jpg" aria-hidden="true"></div>
+            <div class="highlights__card-content">
+              <h3>Green &amp; Open Spaces</h3>
+              <p>Preserved lagoon corridors, communal parks, and jogging paths designed for wellness and community connection.</p>
+              <a href="experience.html#parks" class="highlights__card-link">Explore &#8599;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 · LARGE BANNER
+         Replace: images/banner-coastal-aerial.jpg
+         Ideal: Wide dramatic aerial coastline shot, Gomoa Fetteh beach
+    ============================================================ -->
+    <section class="banner" aria-labelledby="banner-heading">
+      <div class="banner__bg img-block" data-placeholder="banner-coastal-aerial.jpg" aria-hidden="true"></div>
+      <div class="banner__overlay" aria-hidden="true"></div>
+
+      <div class="banner__content" data-anim="fade-up" data-delay="0">
+        <h2 class="banner__headline" id="banner-heading">
+          A Destination Built For<br>Long-Term Value.
+        </h2>
+        <p class="banner__sub">Gomoa Fetteh, Central Region &nbsp;·&nbsp; Ghana</p>
+      </div>
+
+      <!-- Three floating mini-cards (like solar reference bottom row) -->
+      <div class="banner__cards">
+
+        <div class="banner__mini-card glass-card" data-anim="fade-up" data-delay="0">
+          <span class="banner__mini-icon" aria-hidden="true">&#127958;</span>
+          <div>
+            <strong>Atlantic Beachfront</strong>
+            <p>Direct ocean access for all residents</p>
+          </div>
+        </div>
+
+        <div class="banner__mini-card glass-card" data-anim="fade-up" data-delay="150">
+          <span class="banner__mini-icon" aria-hidden="true">&#127807;</span>
+          <div>
+            <strong>Dawa Lagoon</strong>
+            <p>Preserved natural ecosystem</p>
+          </div>
+        </div>
+
+        <div class="banner__mini-card glass-card" data-anim="fade-up" data-delay="300">
+          <span class="banner__mini-icon" aria-hidden="true">&#128205;</span>
+          <div>
+            <strong>75 Min. from Accra</strong>
+            <p>Connected to the capital city</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 · VISION / QUOTE
+         Replace: images/vision-lifestyle-coastal.jpg
+         Ideal: Lifestyle shot — couple, family, or community social scene by the coast
+    ============================================================ -->
+    <section class="vision" id="investment" aria-labelledby="vision-heading">
+      <div class="container">
+        <div class="vision__inner">
+
+          <div class="vision__quote-block" data-anim="fade-up" data-delay="0">
+            <blockquote class="vision__quote">
+              "To create a world-class coastal destination that establishes a benchmark for design, sustainability, functionality, and urban living — a place where people desire to live, work, recreate, and relax."
+            </blockquote>
+            <div class="vision__attribution">
+              <div class="vision__attr-line" aria-hidden="true"></div>
+              <div>
+                <strong>The Enclave Development Team</strong>
+                <span>Gomoa Fetteh P.U.D, Ghana</span>
+              </div>
+            </div>
+
+            <div class="vision__stats" aria-label="Key development statistics">
+              <div class="vision__stat">
+                <span class="vision__stat-value">267</span>
+                <span class="vision__stat-label">Acres Master Planned</span>
+              </div>
+              <div class="vision__stat">
+                <span class="vision__stat-value">75</span>
+                <span class="vision__stat-label">Min from Accra</span>
+              </div>
+              <div class="vision__stat">
+                <span class="vision__stat-value">396</span>
+                <span class="vision__stat-label">Serviced Plots</span>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn btn--primary">
+              Request Investment Brief <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+            </a>
+          </div>
+
+          <div class="vision__image-block" data-anim="fade-up" data-delay="200">
+            <!-- Replace: images/vision-lifestyle-coastal.jpg -->
+            <div class="vision__image img-block" data-placeholder="vision-lifestyle-coastal.jpg" aria-label="Lifestyle image of The Enclave community"></div>
+            <div class="vision__image-card glass-card">
+              <div>
+                <span>Est. First Phase</span>
+                <strong>Phase 1 · 2027</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER — Phase 1 Now Selling
+    ============================================================ -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="cta-banner__inner" data-anim="fade-up" data-delay="0">
+        <div class="cta-banner__tag">Now Available</div>
+        <h2 id="cta-heading">Phase 1 is Now Selling</h2>
+        <p>Secure your plot in the first release of serviced land within The Enclave — Ghana's first coastal master-planned community.</p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn--primary btn--lg">
+            Enquire Now <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+          </a>
+          <a href="investment.html" class="btn btn--ghost btn--lg">View Investment Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 · NEWSLETTER + FOOTER
+         Replace: images/footer-coastal-dusk.jpg
+         Ideal: Dusk / golden-hour aerial of the coastline or community
+    ============================================================ -->
+    <footer class="footer" id="contact" aria-labelledby="footer-heading">
+      <div class="footer__bg img-block" data-placeholder="footer-coastal-dusk.jpg" aria-hidden="true"></div>
+      <div class="footer__overlay" aria-hidden="true"></div>
+
+      <div class="footer__content">
+
+        <!-- Newsletter -->
+        <div class="footer__newsletter">
+          <div class="footer__newsletter-text" data-anim="fade-up" data-delay="0">
+            <h2 id="footer-heading">Stay Updated on<br>The Enclave.</h2>
+            <p>Register your interest and receive the latest updates, investment briefs, and masterplan releases directly to your inbox.</p>
+          </div>
+          <div class="footer__newsletter-form" data-anim="fade-up" data-delay="150">
+            <form class="footer__form" id="newsletterForm" novalidate>
+              <div class="footer__form-fields">
+                <input type="text" name="name" placeholder="Your full name" autocomplete="name" required aria-label="Full name">
+                <input type="email" name="email" placeholder="Your email address" autocomplete="email" required aria-label="Email address">
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                Register Interest <span class="btn__arrow" aria-hidden="true">&#8594;</span>
+              </button>
+              <label class="footer__form-check">
+                <input type="checkbox" required aria-label="Agree to receive updates">
+                <span>I agree to receive project updates from The Enclave.</span>
+              </label>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__divider" aria-hidden="true"></div>
+
+        <!-- Footer columns -->
+        <div class="footer__columns">
+
+          <div class="footer__brand">
+            <img src="images/logo.png" alt="Enclave" class="footer__logo-img">
+            <p>A planned beachfront community in Gomoa Fetteh, Central Region, Ghana. 267 acres of coastal living reimagined.</p>
+            <div class="footer__social" aria-label="Social media links">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="X / Twitter">X</a>
+              <a href="#" aria-label="Instagram">Ig</a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h3>Masterplan</h3>
+            <ul role="list">
+              <li><a href="masterplan.html">Community Overview</a></li>
+              <li><a href="masterplan.html#layer-explorer">Land Use Plan</a></li>
+              <li><a href="masterplan.html#infrastructure">Infrastructure</a></li>
+              <li><a href="masterplan.html#phases">Phasing Plan</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3>Experience</h3>
+            <ul role="list">
+              <li><a href="experience.html">Life at The Enclave</a></li>
+              <li><a href="experience.html#parks">Parks &amp; Green Spaces</a></li>
+              <li><a href="experience.html#sustainability">Sustainability</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3>Investment</h3>
+            <ul role="list">
+              <li><a href="investment.html">Investment Overview</a></li>
+              <li><a href="investment.html#phase1">Phase 1 Now Selling</a></li>
+              <li><a href="investment.html#phases">Project Timeline</a></li>
+              <li><a href="investment.html#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3>Contact</h3>
+            <ul role="list">
+              <li><a href="contact.html">Get in Touch</a></li>
+              <li><a href="contact.html#visit">Request Site Visit</a></li>
+              <li>Gomoa Fetteh</li>
+              <li>Central Region, Ghana</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <span>&copy; 2025 The Enclave, Gomoa Fetteh P.U.D. All rights reserved.</span>
+          <div class="footer__bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
