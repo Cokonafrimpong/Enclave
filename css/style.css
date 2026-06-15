@@ -2463,6 +2463,11 @@ body::after {
   margin-bottom: var(--sp-lg);
 }
 
+[style*="background:var(--c-black)"] .split__body,
+[style*="background: var(--c-black)"] .split__body {
+  color: rgba(255,255,255,0.65);
+}
+
 /* ----------------------------------------------------------------
    FEATURE CARDS GRID (3 or 4 col)
    ---------------------------------------------------------------- */
